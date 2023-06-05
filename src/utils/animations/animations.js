@@ -8,7 +8,8 @@ export function navListAnimation(element) {
     })
 }
 
-export function lineAnimation(element, element2) {
+export function lineAnimation(element, element2, element3) {
+    console.log(element2.innerText)
     tl.to(element, {
         width: '100%',
         ease: Power4.easeIn,
@@ -18,5 +19,10 @@ export function lineAnimation(element, element2) {
         y: 0,
         ease: Power4.easeInOut,
         duration: 1
+    })
+    tl.to(element3, {
+        opacity: 1,
+        ease: Power4.easeInOut,
+        duration: 1.5
     })
 }

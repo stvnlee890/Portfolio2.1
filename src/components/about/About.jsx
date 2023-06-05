@@ -5,10 +5,12 @@ export default function About() {
     <section className="about-container">
       <div className="about-text">
         <p>
-          Hello My name iasdfasdfs Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Esse consectetur, fuga quo pariatur totam
-          blanditiis, voluptate quasi aperiam placeat ea minima. Commodi tempora
-          exercitationem ducimus, sint doloremque eveniet. Ea, illum!
+          Passionate and driven frontend developer with a knack for solving
+          complex problems through creative solutions. Dedicated to designing
+          efficient and visually stunning web applications that deliver
+          exceptional user experiences. Thrives in dynamic environments,
+          constantly seeking new opportunities to learn and push the boundaries
+          of frontend development.
         </p>
       </div>
       <div className="about-portrait">

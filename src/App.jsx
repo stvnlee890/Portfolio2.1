@@ -2,7 +2,6 @@ import "./App.css";
 import Nav from "./components/navBar/Nav";
 import About from "./components/about/About";
 
-import { Routes, Route } from "react-router-dom";
 import Projects from "./components/projects/Projects";
 
 function App() {

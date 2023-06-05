@@ -9,24 +9,53 @@
 }
 
 .project-content {
-    width: 80%;
-    height: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 50px
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.built-with {
+    border: 1px solid black;
+    font-weight: 300;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.built-wrapper {
+    display: flex;
 }
 
 .project-col-1 {
     margin-bottom: 100px;
 }
 
-.project-col-1 > h1 {
+.project-header-2 > h1 {
     font-style: italic;
     font-size: 1.5rem;
+}
+.project-header-2 > p {
+    font-style: bold;
+    font-size: 1.5rem;
+}
+
+.project-header-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .project-col-2 {
     justify-self: center;
+    align-self: center;
+}
+
+.project-desc {
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 
 .images {
