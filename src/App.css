@@ -6,3 +6,11 @@
 * {
   font-family: Helvetica;
 }
+
+.app-wrapper {
+  border: 1px solid black;
+  height: 300vh;
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+}

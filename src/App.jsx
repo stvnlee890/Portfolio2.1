@@ -3,14 +3,16 @@ import Nav from "./components/navBar/Nav";
 import About from "./components/about/About";
 
 import { Routes, Route } from "react-router-dom";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <Nav />
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <section className="app-wrapper">
+        <About />
+        <Projects />
+      </section>
     </div>
   );
 }
