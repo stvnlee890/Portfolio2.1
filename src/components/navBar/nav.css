@@ -1,0 +1,19 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-wrapper {
+  overflow: hidden;
+  display: inline-block;
+  padding: 10px;
+}
+.list-wrapper > li {
+  list-style: none;
+  /* font-size: 1.5rem; */
+  transform: translateY(40px);
+}
+
+.nav-container > ul {
+  padding: 0;
+}

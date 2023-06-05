@@ -1,0 +1,12 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.about-text {
+    border-right: 1px solid black
+}
