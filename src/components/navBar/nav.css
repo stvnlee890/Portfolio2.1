@@ -10,7 +10,7 @@
 }
 .list-wrapper > li {
   list-style: none;
-  /* font-size: 1.5rem; */
+  font-weight: 300;
   transform: translateY(40px);
 }
 

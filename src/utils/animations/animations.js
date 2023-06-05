@@ -11,7 +11,7 @@ export function navListAnimation(element) {
 export function lineAnimation(element, element2) {
     tl.to(element, {
         width: '100%',
-        ease: Power4.easeInOut,
+        ease: Power4.easeIn,
         duration: .5
     })
     tl.to(element2, {
