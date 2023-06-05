@@ -4,26 +4,19 @@ import { navListAnimation } from "../../utils/animations/animations";
 
 export default function Nav() {
   const navUl = useRef(null);
-  
+
   useLayoutEffect(() => {
-    const navList = [...navUl.current.children]
-    navList.forEach((ele) => {
-        navListAnimation(ele.children)
-    })
-  }, [])
+    const navList = [...navUl.current.children];
+    navListAnimation(navList);
+  }, []);
 
   return (
     <div className="nav-container">
-      <ul ref={navUl}>
-        <div className="list-wrapper">
-          <li>about</li>
-        </div>
-        <div className="list-wrapper">
-          <li>projects</li>
-        </div>
-        <div className="list-wrapper">
-          <li>contact</li>
-        </div>
+      <p className="name">STEVEN LEE</p>
+      <ul ref={navUl} className="list-wrapper">
+        <li>about</li>
+        <li>projects</li>
+        <li>contact</li>
       </ul>
     </div>
   );
