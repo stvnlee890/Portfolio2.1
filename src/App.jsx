@@ -18,20 +18,8 @@ function App() {
   window.onpopstate = () => {
     setPressed(true);
   };
-  // useEffect(() => {
-  //   console.log(pressed, location.pathname);
-  //   if ((pressed && location.pathname === "/archives") ||
-  //   (!pressed && location.pathname === "/")) {
-  //     setCheckLocation("");
-  //   } else if (
-  //     (!pressed && location.pathname === "/archives") || (pressed && location.pathname === '/')
-  //   ) {
-  //     setCheckLocation("hidden-nav");
-  //   }
-  // }, [pressed]);
 
   useEffect(() => {
-    // console.log(pressed, location.pathname)
     if(pressed && location.pathname === '/archives') {
       console.log(pressed, location.pathname)
       setCheckLocation('')
@@ -41,6 +29,7 @@ function App() {
       setPressed(false)
     }
   }, [pressed])
+  
   return (
     <div ref={appRef} className="app-container">
       <Nav
