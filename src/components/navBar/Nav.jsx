@@ -9,20 +9,12 @@ export default function Nav({ appRef }) {
   const navUl = useRef(null);
   const nameHeader = useRef(null);
 
-  //   const handleClick = (e) => {
-  //     let eleName;
-  //     const target = e.target.innerText;
-  //     if (target === "projects") eleName = projectSection;
-  //     else if (target === "about") eleName = aboutSection;
-  //     window.scrollTo({
-  //       top: eleName,
-  //       behavior: "smooth",
-  //     });
-  //     console.log(eleName);
-  //   };
-
+  useLayoutEffect(() => {
+    const navList = [...navUl.current.children];
+    navListAnimation(navList);
+    nameAnimation(nameHeader.current);
+  }, []);
   const handleClick = (e) => {
-    console.log("click");
     let eleName;
     const target = e.target.innerText;
     if (target === "projects") {
@@ -34,11 +26,6 @@ export default function Nav({ appRef }) {
       behavior: "smooth",
     });
   };
-  useLayoutEffect(() => {
-    const navList = [...navUl.current.children];
-    navListAnimation(navList);
-    nameAnimation(nameHeader.current);
-  }, []);
 
   return (
     <div className="nav-container">
