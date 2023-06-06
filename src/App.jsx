@@ -1,27 +1,25 @@
 import "./App.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 
 import Nav from "./components/navBar/Nav";
-import About from "./components/about/About";
-import Projects from "./components/projects/Projects";
-import { CaseStudies } from "./components/case-studies/CaseStudies";
+import Home from "./components/home/Home";
+import Archives from "./components/archives/Archives";
 
 function App() {
   const appRef = useRef(null);
+  const [checkLocation, setCheckLocation] = useState('');
 
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
   return (
     <div ref={appRef} className="app-container">
-      <Nav
-        appRef={appRef}
-      />
-      <section className="app-wrapper">
-        <About />
-        <Projects />
-        <CaseStudies />
-      </section>
+      <Nav appRef={appRef} checkLocation={checkLocation} setCheckLocation={setCheckLocation} />
+      <Routes>
+        <Route path="/" element={<Home setCheckLocation={setCheckLocation} />} />
+        <Route path='/archives' element={<Archives /> } />
+      </Routes>
     </div>
   );
 }

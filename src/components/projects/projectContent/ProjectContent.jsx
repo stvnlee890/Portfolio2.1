@@ -1,6 +1,13 @@
 import { projects } from "../../../utils/projects/currentProjects";
+import { useNavigate } from "react-router-dom";
 
-export function ProjectContent({ content }) {
+export default function ProjectContent({ content, setCheckLocation }) {
+  const navigate = useNavigate()
+
+  const navigateClick = () => {
+    setCheckLocation("hidden-nav")
+    navigate("/archives")
+  }
   return (
     <div ref={content} className="content-container">
       {projects.map((project) => (
@@ -32,6 +39,7 @@ export function ProjectContent({ content }) {
           </div>
         </div>
       ))}
+      <p onClick={navigateClick} className="archive-link">Archives</p>
     </div>
   );
 }

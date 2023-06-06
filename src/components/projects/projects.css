@@ -13,12 +13,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: 500px 1fr;
-  grid-template-rows: .2fr 1fr;
+  grid-template-rows: 0.2fr 1fr;
   margin-top: 50px;
 }
 
 .content-container {
-    opacity: 0;
+  opacity: 0;
+  margin-bottom: 40px;
 }
 
 .built-with {
@@ -33,7 +34,7 @@
 }
 
 .project-col-2 > a {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .project-col-1 {
@@ -55,7 +56,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
-  grid-column-start: 1 ;
+  grid-column-start: 1;
   grid-row-start: 1;
 }
 
@@ -77,4 +78,17 @@
   width: 0%;
   height: 1px;
   background-color: black;
+}
+
+.archive-link {
+  font-size: 1.5rem;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+.archive-link:hover {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
 }

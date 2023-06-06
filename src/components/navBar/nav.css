@@ -12,6 +12,7 @@
   font-size: 1.5rem;
   align-self: center;
   opacity: 0;
+  cursor: pointer;
 }
 
 .list-wrapper {
@@ -40,4 +41,8 @@
 
 .nav-container > ul {
   padding: 0;
+}
+
+.hidden-nav {
+  visibility: hidden;
 }

@@ -1,6 +1,6 @@
 import "./projects.css";
 
-import { ProjectContent } from "./project-content/ProjectContent";
+import ProjectContent from "./projectContent/ProjectContent";
 import { useRef, useLayoutEffect } from "react";
 
 import {
@@ -8,7 +8,7 @@ import {
   lineAnimation,
 } from "../../utils/animations/animations";
 
-export default function Projects() {
+export default function Projects({ setCheckLocation }) {
   const line = useRef(null);
   const section = useRef(null);
   const header = useRef(null);
@@ -24,7 +24,7 @@ export default function Projects() {
       <div className="projects-header">
         <h1 ref={header}>Projects</h1>
       </div>
-      <ProjectContent content={content} />
+      <ProjectContent content={content} setCheckLocation={setCheckLocation}/>
     </section>
   );
 }

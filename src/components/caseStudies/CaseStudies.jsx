@@ -2,7 +2,7 @@ import "./case-studies.css";
 import { useRef, useLayoutEffect } from 'react'
 import { lineAnimation } from "../../utils/animations/animations";
 
-export function CaseStudies() {
+export default function CaseStudies() {
   const line = useRef(null)
 
   useLayoutEffect(() => {
