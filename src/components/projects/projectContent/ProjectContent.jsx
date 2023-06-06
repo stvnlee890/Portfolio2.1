@@ -39,7 +39,7 @@ export default function ProjectContent({ content, setCheckLocation }) {
           </div>
         </div>
       ))}
-      <p onClick={navigateClick} className="archive-link">Archives</p>
+      <p onClick={navigateClick} className="archive-link">Archives Link</p>
     </div>
   );
 }

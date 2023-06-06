@@ -82,10 +82,12 @@
 
 .archive-link {
   font-size: 1.5rem;
-  border: 1px solid black;
+  border: 1px solid rgb(55, 17, 241);
+  color: rgb(55, 17, 241);
   display: inline-block;
   padding: 5px;
   cursor: pointer;
+
 }
 .archive-link:hover {
   border-top-color: transparent;

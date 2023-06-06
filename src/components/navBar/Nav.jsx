@@ -21,7 +21,6 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
   useEffect(() => {
     if (window.location.pathname === "/archives") setCheckLocation('hidden-nav');
     else setCheckLocation("")
-    console.log("checkLocation")
   }, []);
 
   const handleClick = (e) => {
