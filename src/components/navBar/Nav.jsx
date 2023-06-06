@@ -1,6 +1,6 @@
 import "./nav.css";
 import { useRef, useLayoutEffect, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import {
   navListAnimation,
   nameAnimation,
@@ -8,7 +8,7 @@ import {
 
 export default function Nav({ appRef, checkLocation, setCheckLocation }) {
   const navigate = useNavigate();
-
+  const location = useLocation()
   const navUl = useRef(null);
   const nameHeader = useRef(null);
 
@@ -19,8 +19,8 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
   }, []);
 
   useEffect(() => {
-    if (window.location.pathname === "/archives") setCheckLocation('hidden-nav');
-    else setCheckLocation("")
+    if(location.pathname === '/archives') setCheckLocation('hidden-nav');
+    else setCheckLocation('')
   }, []);
 
   const handleClick = (e) => {

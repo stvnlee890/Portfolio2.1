@@ -8,6 +8,7 @@ import Archives from "./components/archives/Archives";
 
 function App() {
   const appRef = useRef(null);
+
   const [checkLocation, setCheckLocation] = useState('');
 
   window.onbeforeunload = function () {
