@@ -5,14 +5,13 @@ import { useRef, useLayoutEffect } from "react";
 
 import { lineAnimation } from "../../utils/animations/animations";
 
-export default function Projects({ setProjectScroll }) {
+export default function Projects() {
   const line = useRef(null);
   const section = useRef(null);
   const header = useRef(null);
   const content = useRef(null);
   useLayoutEffect(() => {
-    const yVal = section.current.getBoundingClientRect().y;
-    setProjectScroll(yVal)
+
     lineAnimation(line.current, header.current, content.current);
   }, []);
 

@@ -5,20 +5,34 @@ import {
   nameAnimation,
 } from "../../utils/animations/animations";
 
-export default function Nav({ aboutScroll, projectScroll }) {
+export default function Nav({ appRef }) {
   const navUl = useRef(null);
   const nameHeader = useRef(null);
 
+  //   const handleClick = (e) => {
+  //     let eleName;
+  //     const target = e.target.innerText;
+  //     if (target === "projects") eleName = projectSection;
+  //     else if (target === "about") eleName = aboutSection;
+  //     window.scrollTo({
+  //       top: eleName,
+  //       behavior: "smooth",
+  //     });
+  //     console.log(eleName);
+  //   };
+
   const handleClick = (e) => {
+    console.log("click");
     let eleName;
     const target = e.target.innerText;
-    if (target === "projects") eleName = projectScroll;
-    else if (target === "about") eleName = aboutScroll;
-    window.scrollTo({
-      top: eleName,
+    if (target === "projects") {
+      eleName = appRef.current.children[1].children[1];
+    } else if (target === "about") {
+      eleName = appRef.current.children[1].children[0];
+    }
+    eleName.scrollIntoView({
       behavior: "smooth",
     });
-    console.log(eleName);
   };
   useLayoutEffect(() => {
     const navList = [...navUl.current.children];

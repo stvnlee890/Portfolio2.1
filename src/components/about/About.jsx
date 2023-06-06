@@ -2,14 +2,11 @@ import "./about.css";
 import { useRef, useLayoutEffect } from 'react'
 import { aboutAnimation } from "../../utils/animations/animations";
 
-export default function About({ setAboutScroll }) {
+export default function About() {
   const aboutSection = useRef(null)
 
 
   useLayoutEffect(() => {
-    const yVal = aboutSection.current.getBoundingClientRect().y
-    console.log('here')
-    setAboutScroll(yVal)
     const img = aboutSection.current.children[1].children[0]
     aboutAnimation(aboutSection.current, img)
   }, [])
