@@ -6,10 +6,6 @@ export function ProjectContent({ content }) {
       {projects.map((project) => (
         <div key={project.id} className="project-content">
           <div className="project-col-1">
-            <div className="project-header-2">
-              <h1>{project.name}</h1>
-              <p>{project.year}</p>
-            </div>
             <div>
               <img
                 className="images"
@@ -17,6 +13,10 @@ export function ProjectContent({ content }) {
                 alt={"project " + project.name}
               />
             </div>
+          </div>
+          <div className="project-header-2">
+            <h1>{project.name}</h1>
+            <p>{project.year}</p>
           </div>
           <div className="project-col-2">
             <div className="buit-wrapper">
