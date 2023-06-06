@@ -22,8 +22,8 @@ export function ProjectContent({ content }) {
             <div className="buit-wrapper">
               <p className="project-desc">{project.description}</p>
               {project.builtWith.map((tech, idx) => (
-                <div key={idx}>
-                  <p className="built-with">{tech}</p>
+                <div key={idx} className="built-with">
+                  <p>{tech}</p>
                 </div>
               ))}
             </div>

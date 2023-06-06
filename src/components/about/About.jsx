@@ -1,8 +1,16 @@
 import "./about.css";
+import { useRef, useLayoutEffect } from 'react'
+import { aboutAnimation } from "../../utils/animations/animations";
 
 export default function About() {
+  const aboutSection = useRef(null)
+
+  useLayoutEffect(() => {
+    const img = aboutSection.current.children[1].children[0]
+    aboutAnimation(aboutSection.current, img)
+  }, [])
   return (
-    <section className="about-container">
+    <section ref={aboutSection} className="about-container">
       <div className="about-text">
         <p>
           Passionate and driven frontend developer with a knack for solving

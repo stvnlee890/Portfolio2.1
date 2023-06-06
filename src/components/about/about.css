@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin: 50px 0 60px 0;
+    opacity: 0;
 }
 
 .about-text {
@@ -11,6 +12,12 @@
     max-width: 500px;
 }
 
+.about-portrait {
+    overflow: hidden;
+    width: 350px;
+}
+
 .img-portrait {
     width: 350px;
+    transform: translateY(300px);
 }
