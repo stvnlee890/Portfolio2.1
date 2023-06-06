@@ -1,10 +1,17 @@
 
 .case-studies-header {
     overflow: hidden;
+    margin: 20px 0 0 0;
 }
 
 .case-studies-header > h1 {
-  font-weight: 400;
-  font-size: 3.5rem;
-  /* transform: translateY(60px); */
+  font-size: 4.5rem;
+}
+
+.case-studies-body > p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  max-width: 600px;
+  font-style: italic
 }
