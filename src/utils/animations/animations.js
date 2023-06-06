@@ -10,6 +10,14 @@ export function navListAnimation(element) {
     })
 }
 
+export function nameAnimation(element) {
+    gsap.to(element, {
+        opacity: 1,
+        duration: 1.5,
+        ease: Power4.easeInOut
+    })
+}
+
 export function lineAnimation(line, title, container) {
     tl.to(line, {
         width: '100%',

@@ -11,6 +11,7 @@
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.5rem;
   align-self: center;
+  opacity: 0;
 }
 
 .list-wrapper {
