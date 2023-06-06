@@ -31,12 +31,15 @@ export function nameAnimation(element) {
     })
 }
 
-export function lineAnimation(line, title, container) {
-    tl.to(line, {
+export function lineAnimation(line) {
+    gsap.to(line, {
         width: '100%',
         ease: Power4.easeIn,
         duration: .5
     })
+}
+
+export function projectPageAnimation(title, container) {
     tl.to(title, {
         y: 0,
         ease: Power4.easeInOut,

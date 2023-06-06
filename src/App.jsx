@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Nav from "./components/navBar/Nav";
 import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
+import { CaseStudies } from "./components/case-studies/CaseStudies";
 
 function App() {
   const appRef = useRef(null);
@@ -19,6 +20,7 @@ function App() {
       <section className="app-wrapper">
         <About />
         <Projects />
+        <CaseStudies />
       </section>
     </div>
   );

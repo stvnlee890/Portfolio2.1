@@ -21,6 +21,8 @@ export default function Nav({ appRef }) {
       eleName = appRef.current.children[1].children[1];
     } else if (target === "about") {
       eleName = appRef.current.children[1].children[0];
+    } else if (target === "case-studies") {
+      eleName = appRef.current.children[1].children[2]
     }
     eleName.scrollIntoView({
       behavior: "smooth",
@@ -35,7 +37,7 @@ export default function Nav({ appRef }) {
       <ul ref={navUl} className="list-wrapper">
         <li onClick={handleClick}>about</li>
         <li onClick={handleClick}>projects</li>
-        <li>case-studies</li>
+        <li onClick={handleClick}>case-studies</li>
         <li>contact</li>
       </ul>
     </div>

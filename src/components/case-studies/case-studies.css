@@ -1,0 +1,10 @@
+
+.case-studies-header {
+    overflow: hidden;
+}
+
+.case-studies-header > h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  /* transform: translateY(60px); */
+}
