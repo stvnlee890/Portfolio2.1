@@ -3,7 +3,7 @@ export const projects = [
     id: "001",
     image: "/src/assets/example-project.png",
     year: "2022",
-    name: "project 1",
+    name: "Music Discog",
     builtWith: ["React", "Node"],
     description:
       `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -18,7 +18,7 @@ export const projects = [
     id: "002",
     image: "/src/assets/example-project.png",
     year: "2022",
-    name: "project 2",
+    name: "ShopKeep",
     builtWith: ["React", "Node"],
     description:
     `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -33,7 +33,7 @@ export const projects = [
     id: "003",
     image: "/src/assets/example-project.png",
     year: "2022",
-    name: "project 3",
+    name: "DevBlog",
     builtWith: ["React", "Node"],
     description:
     `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
