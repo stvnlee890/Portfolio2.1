@@ -1,5 +1,5 @@
 import "./nav.css";
-import { useRef, useLayoutEffect, useEffect, useState } from "react";
+import { useRef, useLayoutEffect, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   navListAnimation,

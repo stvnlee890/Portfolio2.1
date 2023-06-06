@@ -4,9 +4,8 @@
 }
 
 .projects-header > h1 {
-  font-weight: 400;
-  font-size: 3.5rem;
-  transform: translateY(60px);
+  font-size: 4.5rem;
+  transform: translateY(80px);
 }
 
 .project-content {
@@ -44,6 +43,7 @@
 
 .project-header-2 > h1 {
   font-style: italic;
+  font-weight: 100;
   font-size: 2.5rem;
 }
 .project-header-2 > p {
@@ -66,7 +66,8 @@
 }
 
 .project-desc {
-  font-weight: 200;
+  color: var(--font-color);
+  font-weight: 300;
   font-size: 1.4rem;
 }
 

@@ -5,7 +5,6 @@ import { aboutAnimation } from "../../utils/animations/animations";
 export default function About() {
   const aboutSection = useRef(null)
 
-
   useLayoutEffect(() => {
     const img = aboutSection.current.children[1].children[0]
     aboutAnimation(aboutSection.current, img)
