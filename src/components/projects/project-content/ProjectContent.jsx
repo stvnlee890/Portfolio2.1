@@ -10,7 +10,7 @@ export function ProjectContent({ content }) {
               <h1 key={project.id}>{project.name}</h1>
               <p>{project.year}</p>
             </div>
-            <img className="images" src={project.image} />
+            <img className="images" src={project.image} alt={'project ' + project.name}/>
           </div>
           <div className="project-col-2">
             <div className="buit-wrapper">

@@ -14,7 +14,7 @@ export default function About() {
         </p>
       </div>
       <div className="about-portrait">
-        <img className="img-portrait" src="/src/assets/portrait.webp" />
+        <img className="img-portrait" src="/src/assets/portrait.webp" alt='portrait'/>
       </div>
     </section>
   );
