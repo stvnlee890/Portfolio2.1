@@ -35,6 +35,7 @@ export default function Nav({ appRef }) {
       <ul ref={navUl} className="list-wrapper">
         <li onClick={handleClick}>about</li>
         <li onClick={handleClick}>projects</li>
+        <li>case-studies</li>
         <li>contact</li>
       </ul>
     </div>
