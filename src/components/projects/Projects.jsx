@@ -9,8 +9,8 @@ export default function Projects() {
   const line = useRef(null);
   const header = useRef(null);
   const content = useRef(null);
-  
   useLayoutEffect(() => {
+    console.log(content.current)
     lineAnimation(line.current, header.current, content.current);
   }, []);
 

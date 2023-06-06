@@ -33,7 +33,9 @@
 }
 
 .list-wrapper > li:hover {
-  color: rgb(0, 145, 255);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent
 }
 
 .nav-container > ul {
