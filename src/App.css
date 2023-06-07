@@ -2,6 +2,7 @@
 :root {
   --bg-color: rgb(40, 135, 194);
   --font-color: #5a5a5a;
+  --font-blue: rgb(55, 17, 241)
 }
 * {
   font-family: 'Roboto', sans-serif;

@@ -23,7 +23,6 @@ function App() {
   };
 
   useEffect(() => {
-    console.log(pressed, location.pathname);
     if (pressed && location.pathname === "/archives") {
       setCheckLocation("");
       setPressed(false);

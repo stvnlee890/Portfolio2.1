@@ -83,11 +83,12 @@
 
 .archive-link {
   font-size: 1.5rem;
-  border: 1px solid rgb(55, 17, 241);
-  color: rgb(55, 17, 241);
+  border: 1px solid var(--font-blue);
+  color: var(--font-blue);
   display: inline-block;
   padding: 5px;
   cursor: pointer;
+  font-family: 'IBM Plex Mono', monospace;
 }
 .archive-link:hover {
   border-top-color: transparent;
