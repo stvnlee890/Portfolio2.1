@@ -51,7 +51,7 @@ function App() {
         />
         <Route path="/archives" element={<Archives />} />
       </Routes>
-      <SideNav />
+      <SideNav appRef={appRef} />
     </div>
   );
 }
