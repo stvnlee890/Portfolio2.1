@@ -5,6 +5,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Nav from "./components/navBar/Nav";
 import Home from "./components/home/Home";
 import Archives from "./components/archives/Archives";
+import SideNav from "./components/sideNav/SideNav";
 
 function App() {
   const appRef = useRef(null);
@@ -50,6 +51,7 @@ function App() {
         />
         <Route path="/archives" element={<Archives />} />
       </Routes>
+      <SideNav />
     </div>
   );
 }

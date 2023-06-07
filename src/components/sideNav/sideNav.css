@@ -1,0 +1,21 @@
+.side-nav-container {
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    background-color: transparent;
+}
+.side-nav-container > ul {
+    padding: 0;
+}
+
+.side-nav-list {
+    list-style: none;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: pointer;
+    padding: 10px;
+    border: .5px solid black;
+    margin-bottom: 5px
+}
+.side-nav-list:hover {
+    background-color: black;
+}
