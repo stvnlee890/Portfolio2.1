@@ -1,7 +1,7 @@
 import { caseStudies } from "../../../utils/projects/caseStudies";
 
 export default function CaseStudiesContent() {
-  console.log(caseStudies);
+
   return (
     <section className="case-content-container">
       {caseStudies.map((caseStudy) => (

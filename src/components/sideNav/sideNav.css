@@ -3,6 +3,11 @@
     top: 50%;
     left: 1%;
     background-color: transparent;
+    display: none;
+}
+
+.unhide {
+    display: block
 }
 .side-nav-container > ul {
     padding: 0;

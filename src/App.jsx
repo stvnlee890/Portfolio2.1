@@ -18,6 +18,7 @@ function App() {
     window.scrollTo(0, 0);
   };
 
+  
   // Listens to user event on back button
   window.onpopstate = () => {
     setPressed(true);
@@ -37,7 +38,7 @@ function App() {
   }, [pressed]);
 
   return (
-    <div ref={appRef} className="app-container">
+    <div ref={appRef} className="app-container" onScroll={() => console.log("scrolled")}>
       <Nav
         appRef={appRef}
         checkLocation={checkLocation}
