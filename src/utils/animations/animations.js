@@ -52,22 +52,44 @@ export function projectPageAnimation(title, container) {
   });
 }
 
-export function sideNav(element) {
-  gsap.to(element.children, {
-    opacity: 1,
-    left: '1%',
-    stagger: 0.05,
-    ease: Power4.easeInOut,
-    duration: .9,
-  });
-}
+// export function sideNav(element) {
+//   gsap.to(element.children, {
+//     opacity: 1,
+//     left: '1%',
+//     stagger: 0.05,
+//     ease: Power4.easeInOut,
+//     duration: .9,
+//   });
+// }
 
-export function reverseSideNav(element) {
-  gsap.to(element.children, {
-    opacity: 0,
-    left: "-40px",
-    stagger: 0.05,
-    ease: Power4.easeInOut,
-    duration: .3,
-  });
-}
+// export function reverseSideNav(element) {
+//   gsap.to(element.children, {
+//     opacity: 0,
+//     left: "-40px",
+//     stagger: 0.05,
+//     ease: Power4.easeInOut,
+//     duration: .4,
+//   });
+// }
+
+export let ctx = gsap.context((element) => {
+ 
+    gsap.to(element.children, {
+      opacity: 1,
+      left: '1%',
+      stagger: 0.05,
+      ease: Power4.easeInOut,
+      duration: .9,
+    });
+
+
+    gsap.to(element.children, {
+      opacity: 0,
+      left: "-40px",
+      stagger: 0.05,
+      ease: Power4.easeInOut,
+      duration: .4,
+    });
+
+  
+})

@@ -18,8 +18,7 @@ function App() {
     window.scrollTo(0, 0);
   };
 
-  
-  // Listens to user event on back button
+  // Listens to user event on back button click
   window.onpopstate = () => {
     setPressed(true);
   };

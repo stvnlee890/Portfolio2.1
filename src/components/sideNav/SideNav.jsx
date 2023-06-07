@@ -1,10 +1,10 @@
 import "./sideNav.css";
 import { useEffect, useState, useRef, useLayoutEffect } from "react";
 
-import { sideNav, reverseSideNav } from "../../utils/animations/animations";
+import { ctx } from "../../utils/animations/animations";
 
 export default function SideNav({ appRef, checkLocation }) {
-  const [navDisp, setNavDisp] = useState("");
+  console.log(ctx)
   const [showNav, setShowNav] = useState(false);
   const sideNavRef = useRef(null);
 
@@ -12,10 +12,8 @@ export default function SideNav({ appRef, checkLocation }) {
     const handleScroll = () => {
       const yVal = window.pageYOffset;
       if (yVal > 62.5) {
-        setNavDisp("unhide");
         setShowNav(true);
       } else if (yVal <= 20) {
-        setNavDisp("");
         setShowNav(false)
       }
     };
@@ -30,10 +28,16 @@ export default function SideNav({ appRef, checkLocation }) {
 
   useLayoutEffect(() => {
     if (showNav) {
-      sideNav(sideNavRef.current);
+      // sideNav(sideNavRef.current);
+      console.log(ctx.data[0])
     } else {
-      reverseSideNav(sideNavRef.current)
+      // reverseSideNav(sideNavRef.current)
     }
+
+    return() => {
+      console.log("COMPONENT UNMOUNT")
+    }
+
   }, [showNav]);
 
   const handleClick = (e) => {
