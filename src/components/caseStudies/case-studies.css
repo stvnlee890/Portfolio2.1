@@ -11,8 +11,9 @@
   margin-top: 20px;
   font-size: 1.2rem;
   font-weight: 100;
-  max-width: 470px;
   font-style: italic;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .case-content-container {
   margin-top: 50px;

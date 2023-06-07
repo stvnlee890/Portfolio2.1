@@ -6,7 +6,7 @@ export function navListAnimation(element) {
         y: 0, 
         ease: Power4.easeInOut,
         duration: 1,
-        stagger: .2,
+        stagger: .25,
     })
 }
 
