@@ -38,7 +38,7 @@ function App() {
   }, [pressed]);
 
   return (
-    <div ref={appRef} className="app-container" onScroll={() => console.log("scrolled")}>
+    <div ref={appRef} className="app-container">
       <Nav
         appRef={appRef}
         checkLocation={checkLocation}
@@ -52,7 +52,7 @@ function App() {
         />
         <Route path="/archives" element={<Archives />} />
       </Routes>
-      <SideNav appRef={appRef} />
+      <SideNav appRef={appRef} checkLocation={checkLocation} />
     </div>
   );
 }

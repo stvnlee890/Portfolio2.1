@@ -3,9 +3,9 @@ import { useEffect, useState, useRef, useLayoutEffect } from "react";
 
 import { sideNav, reverseSideNav } from "../../utils/animations/animations";
 
-export default function SideNav({ appRef }) {
+export default function SideNav({ appRef, checkLocation }) {
   const [navDisp, setNavDisp] = useState("");
-  const [newVal, setNewVal] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const sideNavRef = useRef(null);
 
   useEffect(() => {
@@ -13,10 +13,10 @@ export default function SideNav({ appRef }) {
       const yVal = window.pageYOffset;
       if (yVal > 62.5) {
         setNavDisp("unhide");
-        setNewVal(true);
+        setShowNav(true);
       } else if (yVal <= 20) {
         setNavDisp("");
-        setNewVal(false)
+        setShowNav(false)
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -29,14 +29,12 @@ export default function SideNav({ appRef }) {
   }, []);
 
   useLayoutEffect(() => {
-    console.log(newVal);
-    if (newVal) {
+    if (showNav) {
       sideNav(sideNavRef.current);
     } else {
-      // sideNav(sideNavRef.current, newVal)
       reverseSideNav(sideNavRef.current)
     }
-  }, [newVal]);
+  }, [showNav]);
 
   const handleClick = (e) => {
     let eleName;
@@ -53,7 +51,7 @@ export default function SideNav({ appRef }) {
     });
   };
   return (
-    <div className="side-nav-container">
+    <div className={`side-nav-container ${checkLocation}`}>
       <ul ref={sideNavRef} className={`side-nav-wrapper`}>
         <li onClick={handleClick} className="side-nav-list" id="a">
           a

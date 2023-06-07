@@ -1,6 +1,7 @@
 .side-nav-container {
     position: fixed;
-    top: 50%;
+    top: 30%;
+    left: 1%
 }
 
 .side-nav-container > ul {
