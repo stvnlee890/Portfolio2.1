@@ -1,26 +1,23 @@
 .side-nav-container {
     position: fixed;
     top: 50%;
-    left: 1%;
-    background-color: transparent;
-    display: none;
 }
 
-.unhide {
-    display: block
-}
 .side-nav-container > ul {
     padding: 0;
 }
 
 .side-nav-list {
+    position: relative;
     list-style: none;
     font-family: 'IBM Plex Mono', monospace;
     cursor: pointer;
     padding: 8px;
     border: .5px solid black;
-    margin-bottom: 5px
+    left: -40px;
+    margin-bottom: 5px;
 }
 .side-nav-list:hover {
     background-color: black;
 }
+
