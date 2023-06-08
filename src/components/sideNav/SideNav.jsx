@@ -1,10 +1,10 @@
 import "./sideNav.css";
 import { useEffect, useState, useRef, useLayoutEffect } from "react";
 
-import { ctx } from "../../utils/animations/animations";
+import { sideNav, reverseSideNav } from "../../utils/animations/animations";
 
 export default function SideNav({ appRef, checkLocation }) {
-  console.log(ctx)
+
   const [showNav, setShowNav] = useState(false);
   const sideNavRef = useRef(null);
 
@@ -28,10 +28,9 @@ export default function SideNav({ appRef, checkLocation }) {
 
   useLayoutEffect(() => {
     if (showNav) {
-      // sideNav(sideNavRef.current);
-      console.log(ctx.data[0])
+      sideNav(sideNavRef.current);
     } else {
-      // reverseSideNav(sideNavRef.current)
+      reverseSideNav(sideNavRef.current)
     }
 
     return() => {
