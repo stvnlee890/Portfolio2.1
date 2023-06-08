@@ -42,12 +42,15 @@ export default function SideNav({ appRef, checkLocation }) {
   const handleClick = (e) => {
     let eleName;
     const target = e.target.id;
+    const shortRef = appRef.current.children[1]
     if (target === "p") {
-      eleName = appRef.current.children[1].children[1];
+      eleName = shortRef.children[1];
     } else if (target === "a") {
       eleName = appRef.current;
     } else if (target === "cs") {
-      eleName = appRef.current.children[1].children[2];
+      eleName = shortRef.children[2];
+    } else {
+      eleName = shortRef.children[3]
     }
     eleName.scrollIntoView({
       behavior: "smooth",

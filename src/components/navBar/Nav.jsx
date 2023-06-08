@@ -32,12 +32,16 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
   const handleClick = (e) => {
     let eleName;
     const target = e.target.innerText;
+    const shortRef = appRef.current.children[1]
+    console.log(shortRef.children[3])
     if (target === "projects") {
-      eleName = appRef.current.children[1].children[1];
+      eleName = shortRef.children[1];
     } else if (target === "about") {
-      eleName = appRef.current.children[1].children[0];
+      eleName = shortRef.children[0];
     } else if (target === "case-studies") {
-      eleName = appRef.current.children[1].children[2];
+      eleName = shortRef.children[2];
+    } else {
+      eleName = shortRef.children[3]
     }
     eleName.scrollIntoView({
       behavior: "smooth",
@@ -58,7 +62,7 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
         <li onClick={handleClick}>about</li>
         <li onClick={handleClick}>projects</li>
         <li onClick={handleClick}>case-studies</li>
-        <li>contact</li>
+        <li onClick={handleClick}>contact</li>
       </ul>
     </div>
   );
