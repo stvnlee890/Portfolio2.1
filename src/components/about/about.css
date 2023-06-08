@@ -14,6 +14,7 @@
 .about-portrait {
     overflow: hidden;
     width: 350px;
+    height: auto;
     margin: 0 auto;
 }
 

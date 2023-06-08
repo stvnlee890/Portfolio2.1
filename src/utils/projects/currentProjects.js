@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: "001",
-    image: "/src/assets/example-project.png",
+    image: "/src/assets/example-project.webp",
     year: "2022",
     name: "Music Discog",
     builtWith: ["React", "Node"],
@@ -16,7 +16,7 @@ export const projects = [
   },
   {
     id: "002",
-    image: "/src/assets/example-project.png",
+    image: "/src/assets/example-project.webp",
     year: "2022",
     name: "ShopKeep",
     builtWith: ["React", "Node"],
@@ -31,7 +31,7 @@ export const projects = [
   },
   {
     id: "003",
-    image: "/src/assets/example-project.png",
+    image: "/src/assets/example-project.webp",
     year: "2022",
     name: "DevBlog",
     builtWith: ["React", "Node"],

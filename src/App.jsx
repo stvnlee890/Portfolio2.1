@@ -18,7 +18,10 @@ function App() {
     window.scrollTo(0, 0);
   };
 
-  // Listens to user event on back button click
+  /*
+Listens to user event on back button click
+Runs before component mounts
+ */
   window.onpopstate = () => {
     setPressed(true);
   };
@@ -30,9 +33,9 @@ function App() {
     } else if (pressed && location.pathname === "/") {
       setCheckLocation("hidden-nav");
       setPressed(false);
-    } else if (!pressed && location.pathname === '/') {
-      setCheckLocation('')
-      setPressed(false)
+    } else if (!pressed && location.pathname === "/") {
+      setCheckLocation("");
+      setPressed(false);
     }
   }, [pressed]);
 

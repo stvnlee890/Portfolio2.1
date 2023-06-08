@@ -32,11 +32,6 @@ export default function SideNav({ appRef, checkLocation }) {
     } else {
       reverseSideNav(sideNavRef.current)
     }
-
-    return() => {
-      console.log("COMPONENT UNMOUNT")
-    }
-
   }, [showNav]);
 
   const handleClick = (e) => {

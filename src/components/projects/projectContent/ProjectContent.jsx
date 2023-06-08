@@ -9,7 +9,7 @@ export default function ProjectContent({ content, setCheckLocation }) {
     navigate("/archives")
   }
   return (
-    <div ref={content} className="content-container">
+    <div ref={content} className="content-container projects-content-container">
       {projects.map((project) => (
         <div key={project.id} className="project-content">
           <div className="project-col-1">

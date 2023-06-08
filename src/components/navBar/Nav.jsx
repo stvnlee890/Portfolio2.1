@@ -33,7 +33,6 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
     let eleName;
     const target = e.target.innerText;
     const shortRef = appRef.current.children[1]
-    console.log(shortRef.children[3])
     if (target === "projects") {
       eleName = shortRef.children[1];
     } else if (target === "about") {

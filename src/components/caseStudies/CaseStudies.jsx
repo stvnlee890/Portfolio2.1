@@ -12,9 +12,9 @@ export default function CaseStudies() {
   }, []);
 
   return (
-    <div className="case-studies-container">
+    <div className="section-container case-studies-container">
       <div ref={line} className="line"></div>
-      <div className="case-studies-header">
+      <div className="section-headers case-studies-header">
         <h1>Case Studies</h1>
       </div>
       <div className="case-studies-body">

@@ -19,10 +19,10 @@ export default function Projects({ setCheckLocation }) {
   }, []);
 
   return (
-    <section ref={section} className="projects-container">
+    <section ref={section} className="section-container projects-container">
       <div ref={line} className="line"></div>
-      <div className="projects-header">
-        <h1 ref={header}>Projects</h1>
+      <div className="section-headers">
+        <h1 ref={header} className="projects-header">Projects</h1>
       </div>
       <ProjectContent content={content} setCheckLocation={setCheckLocation}/>
     </section>

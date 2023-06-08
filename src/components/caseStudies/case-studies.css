@@ -1,11 +1,11 @@
-.case-studies-header {
+/* .case-studies-header {
   overflow: hidden;
   margin: 20px 0 0 0;
-}
+} */
 
-.case-studies-header > h1 {
+/* .case-studies-header > h1 {
   font-size: 4.5rem;
-}
+} */
 
 .case-studies-body > p {
   margin-top: 20px;
@@ -15,13 +15,17 @@
   margin-left: 100px;
   margin-right: 100px;
 }
-.case-content-container {
+/* .case-content-container {
   margin-top: 50px;
-}
+} */
 .case-content-wrapper {
   display: grid;
   grid-template-columns: 0.1fr 0.2fr 0.5fr 0.2fr;
   margin-top: 20px;
+}
+
+.content-container.case-studies {
+  margin-top: 70px;
 }
 
 .content-id {

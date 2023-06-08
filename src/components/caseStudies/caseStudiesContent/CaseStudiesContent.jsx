@@ -3,7 +3,7 @@ import { caseStudies } from "../../../utils/projects/caseStudies";
 export default function CaseStudiesContent() {
 
   return (
-    <section className="case-content-container">
+    <section className="content-container case-studies">
       {caseStudies.map((caseStudy) => (
         <div key={caseStudy.id} className="case-content-wrapper">
           <div>
