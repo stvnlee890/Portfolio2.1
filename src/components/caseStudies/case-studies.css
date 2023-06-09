@@ -28,14 +28,20 @@
   margin-top: 70px;
 }
 
-.content-id {
+
+.case-content {
+  font-size: .9rem;
   font-family: "IBM Plex Mono", monospace
+}
+
+.content-desc {
+  font-family: 'Roboto', sans-serif;
 }
 
 .content-name {
   font-weight: 300;
-}
 
+}
 .content-link {
   text-align: center;
   color: var(--font-blue);

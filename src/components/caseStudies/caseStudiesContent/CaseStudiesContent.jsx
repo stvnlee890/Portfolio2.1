@@ -7,7 +7,7 @@ export default function CaseStudiesContent() {
       {caseStudies.map((caseStudy) => (
         <div key={caseStudy.id} className="case-content-wrapper">
           <div>
-            <p className="case-content content-id">{caseStudy.id}</p>
+            <p className="case-content content-id">{caseStudy.id}.</p>
           </div>
           <div>
             <p className="case-content content-name">{caseStudy.name}</p>
