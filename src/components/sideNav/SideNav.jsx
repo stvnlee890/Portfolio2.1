@@ -4,7 +4,6 @@ import { useEffect, useState, useRef, useLayoutEffect } from "react";
 import { sideNav, reverseSideNav } from "../../utils/animations/animations";
 
 export default function SideNav({ appRef, checkLocation }) {
-
   const [showNav, setShowNav] = useState(false);
   const sideNavRef = useRef(null);
 
@@ -14,7 +13,7 @@ export default function SideNav({ appRef, checkLocation }) {
       if (yVal > 62.5) {
         setShowNav(true);
       } else if (yVal <= 20) {
-        setShowNav(false)
+        setShowNav(false);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -30,26 +29,33 @@ export default function SideNav({ appRef, checkLocation }) {
     if (showNav) {
       sideNav(sideNavRef.current);
     } else {
-      reverseSideNav(sideNavRef.current)
+      reverseSideNav(sideNavRef.current);
     }
   }, [showNav]);
 
   const handleClick = (e) => {
     let eleName;
     const target = e.target.id;
-    const shortRef = appRef.current.children[1]
+    const shortRef = appRef.current.children[1];
     if (target === "p") {
       eleName = shortRef.children[1];
     } else if (target === "a") {
-      eleName = appRef.current;
+      eleName = null
     } else if (target === "cs") {
       eleName = shortRef.children[2];
     } else {
-      eleName = shortRef.children[3]
+      eleName = shortRef.children[3];
     }
-    eleName.scrollIntoView({
-      behavior: "smooth",
-    });
+    if (eleName) {
+      eleName.scrollIntoView({
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
   };
   return (
     <div className={`side-nav-container ${checkLocation}`}>
