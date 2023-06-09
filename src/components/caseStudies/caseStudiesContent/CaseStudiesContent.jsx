@@ -12,7 +12,7 @@ export default function CaseStudiesContent() {
           <div>
             <p className="case-content content-name">{caseStudy.name}</p>
           </div>
-          <div>
+          <div className="content-desc-wrapper">
             <p className="case-content content-desc">{caseStudy.description}</p>
           </div>
           <div>

@@ -1,7 +1,19 @@
 :root {
   --bg-color: rgb(40, 135, 194);
   --font-color: #5a5a5a;
-  --font-blue: rgb(55, 17, 241)
+  --font-blue: rgb(55, 17, 241);
+  --header-size-regular: 4.5rem;
+  --header-size-medium: 4rem;
+
+  --subheader-size-regular: 2.5rem;
+  --subheader-size-medium: 2.2rem;
+
+  --font-size-regular: 1.5rem;
+  --font-size-medium: 1.2rem;
+  --font-size-small: 1.1rem;
+  --font-size-xsmall: .9rem;
+  --font-size-case-small: .8rem
+
 }
 * {
   font-family: 'Roboto', sans-serif;
@@ -16,7 +28,7 @@ html {
 }
 
 .section-headers > h1 {
-  font-size: 4.5rem;
+  font-size:var(--header-size-regular);
   text-align: center;
 }
 
@@ -39,4 +51,10 @@ html {
 
 .content-container.projects-content-container {
   opacity: 0;
+}
+
+@media (max-width: 1000px) {
+.section-headers > h1 {
+  font-size: var(--header-size-medium)
+}
 }

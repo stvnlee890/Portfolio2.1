@@ -1,6 +1,6 @@
 .case-studies-body > p {
   margin-top: 20px;
-  font-size: 1.2rem;
+  font-size: var(--font-size-medium);
   font-weight: 100;
   font-style: italic;
   margin-left: 100px;
@@ -18,21 +18,21 @@
   margin-top: 70px;
 }
 
-
 .case-content {
-  font-size: .9rem;
-  font-family: "IBM Plex Mono", monospace
+  font-size: var(--font-size-xsmall);
+  font-family: "IBM Plex Mono", monospace;
 }
+
 .content-id {
   font-weight: 700;
 }
 .content-desc {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .content-name {
   font-weight: 700;
-
+  display: inline-block;
 }
 .content-link {
   font-weight: 700;
@@ -40,6 +40,44 @@
   color: var(--font-blue);
   cursor: pointer;
 }
-.content-link:hover{
+.content-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  .case-studies-body > p {
+    font-size: var(--font-size-small);
+  }
+  .case-content-wrapper {
+    grid-template-columns: 0.1fr 0.2fr 0.7fr 0.1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .case-studies-body > p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .case-content-wrapper {
+    grid-template-columns: 0.1fr 0.2fr 0.5fr 0.2fr;
+  }
+  .content-id {
+    font-size: var(--font-size-case-small);
+  }
+  .content-link{
+    font-size: var(--font-size-case-small);
+  }
+}
+
+@media (max-width: 580px) {
+  .case-studies-body > p {
+    margin-left: 0;
+    margin-right: 0
+  }
+  .content-desc-wrapper {
+    display: none
+  }
+  .case-content-wrapper {
+    grid-template-columns: .5fr 1fr .2fr
+  }
 }

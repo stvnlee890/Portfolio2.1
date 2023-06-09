@@ -39,11 +39,11 @@
 .project-header-2 > h1 {
   font-style: italic;
   font-weight: 100;
-  font-size: 2.5rem;
+  font-size: var(--subheader-size-regular);
 }
 .project-header-2 > p {
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: var(--font-size-regular);
   margin: auto 0;
 }
 
@@ -63,7 +63,7 @@
 .project-desc {
   /* color: var(--font-color); */
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: var(--font-size-regular);
 }
 
 .images {
@@ -78,17 +78,32 @@
 }
 
 .archive-link {
-  font-size: 1.5rem;
+  font-size: var(--font-size-regular);
   border: 1px solid var(--font-blue);
   color: var(--font-blue);
   display: inline-block;
   padding: 5px;
   cursor: pointer;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
 }
 .archive-link:hover {
   border-top-color: transparent;
   border-right-color: transparent;
   border-left-color: transparent;
+}
+
+@media (max-width: 1000px) {
+  .project-desc {
+    font-size: var(--font-size-medium);
+  }
+  .project-header-2 > h1 {
+    font-size: var(--subheader-size-medium);
+  }
+  .project-content {
+    grid-template-columns: 400px 1fr;
+  }
+  .images {
+    width: 400px;
+  }
 }

@@ -7,7 +7,7 @@
 
 .about-text {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: var(--font-size-regular);
     max-width: 500px;
 }
 
@@ -21,4 +21,10 @@
 .img-portrait {
     width: 350px;
     transform: translateY(300px);
+}
+
+@media (max-width: 1000px) {
+    .about-text {
+        font-size: var(--font-size-medium);
+    }
 }
