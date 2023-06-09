@@ -19,7 +19,7 @@ export function aboutAnimation(element, element1) {
   gsap.to(element1, {
     y: 0,
     ease: Power4.easeInOut,
-    duration: 2,
+    duration: 1,
   });
 }
 
@@ -48,7 +48,7 @@ export function projectPageAnimation(title, container) {
   tl.to(container, {
     opacity: 1,
     ease: Power4.easeInOut,
-    duration: 1.5,
+    duration: 1,
   });
 }
 

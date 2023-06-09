@@ -1,6 +1,6 @@
 import "./sideNav.css";
-import { useEffect, useState, useRef, useLayoutEffect } from "react";
 
+import { useEffect, useState, useRef, useLayoutEffect } from "react";
 import { sideNav, reverseSideNav } from "../../utils/animations/animations";
 
 export default function SideNav({ appRef, checkLocation }) {
@@ -31,6 +31,7 @@ export default function SideNav({ appRef, checkLocation }) {
     } else {
       reverseSideNav(sideNavRef.current);
     }
+  
   }, [showNav]);
 
   const handleClick = (e) => {
