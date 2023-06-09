@@ -14,7 +14,7 @@ export function aboutAnimation(element, element1) {
   gsap.to(element, {
     opacity: 1,
     ease: Power4.easeInOut,
-    duration: 2,
+  
   });
   gsap.to(element1, {
     y: 0,
@@ -26,7 +26,7 @@ export function aboutAnimation(element, element1) {
 export function nameAnimation(element) {
   gsap.to(element, {
     opacity: 1,
-    duration: 1.5,
+    duration: 1,
     ease: Power4.easeInOut,
   });
 }

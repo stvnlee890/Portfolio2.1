@@ -1,12 +1,13 @@
 import "./App.css";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, lazy, Suspense } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import Nav from "./components/navBar/Nav";
 import Home from "./components/home/Home";
-import Archives from "./components/archives/Archives";
+// import Archives from "./components/archives/Archives";
 import SideNav from "./components/sideNav/SideNav";
 
+const Archives = lazy(() => import("./components/archives/Archives"));
 function App() {
   const appRef = useRef(null);
   const location = useLocation();
@@ -50,9 +51,16 @@ Runs before component mounts
       <Routes>
         <Route
           path="/"
-          element={<Home setCheckLocation={setCheckLocation} />}
+          element={<Home setCheckLocation={setCheckLocation} appRef={appRef} />}
         />
-        <Route path="/archives" element={<Archives />} />
+        <Route
+          path="/archives"
+          element={
+            <Suspense>
+              <Archives />
+            </Suspense>
+          }
+        />
       </Routes>
       <SideNav appRef={appRef} checkLocation={checkLocation} />
     </div>
