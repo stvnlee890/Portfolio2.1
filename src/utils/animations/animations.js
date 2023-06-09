@@ -55,10 +55,10 @@ export function projectPageAnimation(title, container) {
 export function sideNav(element) {
   gsap.to(element.children, {
     opacity: 1,
-    left: '1%',
+    left: "1%",
     stagger: 0.05,
     ease: Power4.easeInOut,
-    duration: .9,
+    duration: 0.9,
   });
 }
 
@@ -68,7 +68,16 @@ export function reverseSideNav(element) {
     left: "-40px",
     stagger: 0.05,
     ease: Power4.easeInOut,
-    duration: .4,
+    duration: 0.4,
   });
 }
 
+export function archivePage(element) {
+    gsap.to(element, {
+      opacity: 1,
+      ease: Power4.easeInOut,
+      stagger: 0.15,
+      duration: 1,
+    });
+
+}

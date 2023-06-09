@@ -1,0 +1,68 @@
+export const archived = [
+    {
+        id: "001",
+        year: "2022",
+        name: "Music Discography",
+        builtWith: ["React", "Node"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "002",
+        year: "2022",
+        name: "ShopKeep",
+        builtWith: ["React", "Node", "Mongo", "AWS", "Express"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "003",
+        year: "2022",
+        name: "DevBlog",
+        builtWith: ["React", "Node", "Mongo", "AWS", "Express", "JWT",],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "004",
+        year: "2022",
+        name: "Music Discog",
+        builtWith: ["React", "Node"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "005",
+        year: "2022",
+        name: "Music Discog",
+        builtWith: ["React", "Node"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "006",
+        year: "2022",
+        name: "Music Discog",
+        builtWith: ["React", "Node"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "007",
+        year: "2022",
+        name: "Music Discog",
+        builtWith: ["React", "Node"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    {
+        id: "008",
+        year: "2022",
+        name: "Music Discog",
+        builtWith: ["React", "Node"],
+        link: "https://github.com/",
+        liveSite: "https://wikipedia.com/",
+      },
+    
+  ];
+  

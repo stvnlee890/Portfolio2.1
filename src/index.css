@@ -1,9 +1,9 @@
- * {
-    box-sizing: border-box;
-    margin: 0;
-    background-color: rgb(237, 237, 237)
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html {
-    margin-bottom: 200px;
+  margin-bottom: 200px;
+  margin-top: 20px;
 }
