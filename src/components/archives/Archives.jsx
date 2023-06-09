@@ -1,13 +1,25 @@
 import "./archives.css";
+import { gsap } from "gsap";
 import { useEffect, useRef, useLayoutEffect } from "react";
 import { archived } from "../../utils/projects/archivedProjects";
 import { archivePage } from "../../utils/animations/animations";
+
+
 export default function Archives() {
   const archiveRef = useRef(null)
+
   useLayoutEffect(() => {
-    console.log(archiveRef.current.children)
     const newArr = [...archiveRef.current.children]
-    archivePage(newArr)
+    let ctx = gsap.context(() => {
+      archivePage(newArr)
+    })
+
+    return () => {
+      console.log("Revert animations")
+      console.log("Animation reverted " + ctx.isReverted)
+      ctx.revert()
+      console.log("Animation reverted " + ctx.isReverted)
+    }
   }, [])
   useEffect(() => {
     window.scrollTo(0, 0);
