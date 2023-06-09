@@ -1,12 +1,3 @@
-/* .case-studies-header {
-  overflow: hidden;
-  margin: 20px 0 0 0;
-} */
-
-/* .case-studies-header > h1 {
-  font-size: 4.5rem;
-} */
-
 .case-studies-body > p {
   margin-top: 20px;
   font-size: 1.2rem;
@@ -14,10 +5,9 @@
   font-style: italic;
   margin-left: 100px;
   margin-right: 100px;
+  text-align: center;
 }
-/* .case-content-container {
-  margin-top: 50px;
-} */
+
 .case-content-wrapper {
   display: grid;
   grid-template-columns: 0.1fr 0.2fr 0.5fr 0.2fr;
@@ -33,16 +23,19 @@
   font-size: .9rem;
   font-family: "IBM Plex Mono", monospace
 }
-
+.content-id {
+  font-weight: 700;
+}
 .content-desc {
   font-family: 'Roboto', sans-serif;
 }
 
 .content-name {
-  font-weight: 300;
+  font-weight: 700;
 
 }
 .content-link {
+  font-weight: 700;
   text-align: center;
   color: var(--font-blue);
   cursor: pointer;

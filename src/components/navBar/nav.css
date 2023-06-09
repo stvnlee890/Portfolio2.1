@@ -9,6 +9,7 @@
 
 .name {
   font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
   font-size: 1.5rem;
   align-self: center;
   opacity: 0;
@@ -23,7 +24,7 @@
 .list-wrapper > li {
   font-family: "IBM Plex Mono", monospace;
   display: inline-block;
-  font-weight: 300;
+  font-weight: 700;
   border: 1px solid black;
   /* border-radius: 5px; */
   margin-right: 10px;

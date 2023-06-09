@@ -20,4 +20,5 @@
   color: var(--font-blue);
   padding: 10px;
   font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
 }

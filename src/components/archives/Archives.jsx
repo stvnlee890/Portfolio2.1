@@ -49,7 +49,7 @@ export default function Archives() {
                 ))}
               </div>
               <div>
-                <a href={archive.link}>
+                <a href={archive.link} rel="noopener noreferrer" target="_blank">
                   <img
                     src="/src/assets/github-icon.png"
                     alt="Github logo"
@@ -59,7 +59,7 @@ export default function Archives() {
                 </a>
               </div>
               <div>
-                <a href={archive.liveSite}>
+                <a href={archive.liveSite} rel="noopener noreferrer" target="_blank">
                   <img
                     src="/src/assets/external-link.png"
                     alt="external link logo"

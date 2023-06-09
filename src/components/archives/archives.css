@@ -33,7 +33,9 @@
 
 .archive-content {
   font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
 }
+
 .archive-id {
   font-size: 1rem;
 }
@@ -42,4 +44,5 @@
   padding-right: 10px;
   display: inline-block;
   font-size: 0.8rem;
+  color: var(--font-blue)
 }
