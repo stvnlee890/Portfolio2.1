@@ -21,7 +21,8 @@
 }
 
 .section-container {
-  margin-top: 50px;
+  margin-top: 100px;
+  scroll-margin: 40px;
 }
 
 .content-container {
