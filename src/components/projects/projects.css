@@ -61,7 +61,7 @@
 }
 
 .project-desc {
-  color: var(--font-color);
+  /* color: var(--font-color); */
   font-weight: 300;
   font-size: 1.4rem;
 }
