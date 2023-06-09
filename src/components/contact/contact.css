@@ -2,22 +2,22 @@
   margin: 0 auto;
   width: 500px;
   margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .contact-text {
-    font-size: 1.05rem;
+  font-size: 1.05rem;
   text-align: center;
-  /* font-family: "IBM Plex Mono", monospace; */
 }
 
 .email {
-    margin-top: 40px;
-    text-decoration: none;
-    border: 3px solid var(--font-blue);
-    color: var(--font-blue);
-    padding: 10px;
-    font-family: "IBM Plex Mono", monospace;
+  margin-top: 40px;
+  text-decoration: none;
+  border: 3px solid var(--font-blue);
+  color: var(--font-blue);
+  padding: 10px;
+  font-family: "IBM Plex Mono", monospace;
 }
