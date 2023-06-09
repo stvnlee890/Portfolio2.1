@@ -23,8 +23,44 @@
     transform: translateY(300px);
 }
 
+
 @media (max-width: 1000px) {
     .about-text {
         font-size: var(--font-size-medium);
     }
-}
+  }
+
+  @media (max-width: 850px) {
+    .about-text {
+        font-size: var(--font-size-small);
+    }
+    .img-portrait {
+        width: 300px;
+    }
+    .about-portrait {
+        width: 300px;
+    }
+  }
+
+  @media (max-width: 750px) {
+
+    .img-portrait {
+        width: 250px;
+    }
+    .about-portrait {
+        width: 250px;
+    }
+  }
+
+  @media (max-width: 630px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text > p {
+        text-align: center;
+    }
+    .img-portrait {
+        margin-top: 40px
+    }
+  }

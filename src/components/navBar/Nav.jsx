@@ -57,11 +57,17 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
       <p ref={nameHeader} onClick={homeClick} className="name">
         SEUNG KI LEE<span>&#169;</span>
       </p>
-      <ul ref={navUl} className={`list-wrapper ${checkLocation}`}>
+      <ul ref={navUl} className={`list-wrapper hide-nav ${checkLocation}`}>
         <li onClick={handleClick}>about</li>
         <li onClick={handleClick}>projects</li>
         <li onClick={handleClick}>case-studies</li>
         <li onClick={handleClick}>contact</li>
+      </ul>
+      <ul ref={navUl} className={`list-wrapper unhide-nav ${checkLocation}`}>
+        <li onClick={handleClick}>a</li>
+        <li onClick={handleClick}>p</li>
+        <li onClick={handleClick}>c</li>
+        <li onClick={handleClick}>c</li>
       </ul>
     </div>
   );
