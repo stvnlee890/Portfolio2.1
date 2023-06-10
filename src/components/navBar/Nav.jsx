@@ -60,7 +60,7 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
 
   const handleClick = (e) => {
     let eleName;
-    const target = e.target.innerText;
+    const target = e.target.id;
     const shortRef = appRef.current.children[1];
     if (target === "projects") {
       eleName = shortRef.children[1];
@@ -87,10 +87,10 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
         SEUNG KI LEE<span>&#169;</span>
       </p>
       <ul ref={navUl} className={`list-wrapper hide-nav ${checkLocation}`}>
-        <li onClick={handleClick}>{toggleNav ? "a" : "about"}</li>
-        <li onClick={handleClick}>{toggleNav ? "p" : "projects"}</li>
-        <li onClick={handleClick}>{toggleNav ? "c" : "case-studies"}</li>
-        <li onClick={handleClick}>{toggleNav ? "c" : "contact"}</li>
+        <li id="about" onClick={handleClick}>{toggleNav ? "a" : "about"}</li>
+        <li id="projects" onClick={handleClick}>{toggleNav ? "p" : "projects"}</li>
+        <li id="case-studies" onClick={handleClick}>{toggleNav ? "c" : "case-studies"}</li>
+        <li id="contact" onClick={handleClick}>{toggleNav ? "c" : "contact"}</li>
       </ul>
     </div>
   );

@@ -24,3 +24,22 @@
     background-color: black;
 }
 
+@media (max-width: 850px) {
+    .side-nav-container{
+        left: 2px
+    }
+    .side-nav-list {
+        font-size: var(--font-size-xsmall);
+    }
+}
+@media (min-width: 636px) {
+    .side-nav-container {
+        display: block;
+    }
+}
+
+@media (max-width: 635px) {
+    .side-nav-container {
+        display: none;
+    }
+}

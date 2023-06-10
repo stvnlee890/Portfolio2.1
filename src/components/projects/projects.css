@@ -127,6 +127,11 @@
   .archive-link {
     font-size: var(--font-size-medium);
   }
+  .archive-link-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 750px) {
@@ -152,10 +157,11 @@
 @media (max-width: 600px) {
   .project-content {
     display: grid;
-    grid-template-rows: 0.2fr 390px;
+    grid-template-rows: 0.2fr 380px;
     grid-template-columns: 1fr;
+    align-items: center;
+    margin-bottom: 200px;
   }
-
   .images {
     width: 100%;
   }
@@ -177,8 +183,17 @@
   .project-desc {
     text-align: center;
   }
-  .project-links-container {
-    width: 50%;
-    margin: 0 auto;
+
+  .project-col-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .archive-link {
+    text-align: center;
+  }
+
+  .project-header-2 > h1 {
+    font-size: var(--subheader-size-regular);
   }
 }
