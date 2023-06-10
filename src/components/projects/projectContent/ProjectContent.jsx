@@ -13,7 +13,7 @@ export default function ProjectContent({ content, setCheckLocation }) {
       {projects.map((project) => (
         <div key={project.id} className="project-content">
           <div className="project-col-1">
-            <div>
+            <div className="images-container">
               <img
                 className="images"
                 src={project.image}
@@ -34,8 +34,8 @@ export default function ProjectContent({ content, setCheckLocation }) {
                 </div>
               ))}
             </div>
-            <a href={project.link}>live site</a>
-            <a href={project.link}>github</a>
+            <a className="project-links" href={project.link}>live site</a>
+            <a className="project-links" href={project.link}>github</a>
           </div>
         </div>
       ))}

@@ -7,6 +7,7 @@
 
   --subheader-size-regular: 2.5rem;
   --subheader-size-medium: 2.2rem;
+  --subheader-size-small: 2rem;
 
   --font-size-regular: 1.5rem;
   --font-size-medium: 1.2rem;
@@ -57,4 +58,13 @@ html {
 .section-headers > h1 {
   font-size: var(--header-size-medium)
 }
+}
+
+@media (max-width: 700px) {
+  .section-headers {
+    margin: 40px 0 40px 0;
+  }
+  .section-container {
+    margin-top: 50px
+  }
 }
