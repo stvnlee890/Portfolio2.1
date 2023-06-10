@@ -25,12 +25,13 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
       window.localStorage.setItem("toggle", "false")
     }
     const getLS = window.localStorage.getItem("toggle");
+    // Having this logic inside useLayoutEffect prevents flickering
     if (getLS === "true") {
       setToggleNav(true);
     } else {
       setToggleNav(false);
     }
-    
+
     function handleResize() {
       if (window.innerWidth <= 651) {
         setToggleNav(true);
