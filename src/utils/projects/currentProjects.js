@@ -4,7 +4,7 @@ export const projects = [
     image: "/src/assets/example-project.webp",
     year: "2022",
     name: "Music Discog",
-    builtWith: ["React", "AWS", "Express", "Node"],
+    builtWith: ["React", "AWS", "Express", "Tailwind", "CSS", "Node", "Tailwind"],
     description:
       `Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
       Nihil soluta delectus repellendus ducimus 

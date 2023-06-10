@@ -1,69 +1,72 @@
 .about-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 50px 0 80px 0;
-    opacity: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 50px 0 80px 0;
+  opacity: 0;
 }
 
 .about-text {
-    font-weight: 300;
-    font-size: var(--font-size-regular);
-    max-width: 500px;
+  font-weight: 300;
+  font-size: var(--font-size-regular);
+  max-width: 500px;
 }
 
 .about-portrait {
-    overflow: hidden;
-    width: 350px;
-    height: auto;
-    margin: 0 auto;
+  overflow: hidden;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .img-portrait {
-    width: 350px;
-    transform: translateY(300px);
+  width: 350px;
+  transform: translateY(300px);
 }
 
+.project-links {
+  padding-right: 10px;
+}
 
 @media (max-width: 1000px) {
-    .about-text {
-        font-size: var(--font-size-medium);
-    }
+  .about-text {
+    font-size: var(--font-size-medium);
   }
+}
 
-  @media (max-width: 850px) {
-    .about-text {
-        font-size: var(--font-size-small);
-    }
-    .img-portrait {
-        width: 300px;
-    }
-    .about-portrait {
-        width: 300px;
-    }
+@media (max-width: 850px) {
+  .about-text {
+    font-size: var(--font-size-small);
   }
-
-  @media (max-width: 750px) {
-
-    .img-portrait {
-        width: 250px;
-    }
-    .about-portrait {
-        width: 250px;
-    }
-    .about-container {
-        margin: 50px 0 50px 0;
-    }
+  .img-portrait {
+    width: 300px;
   }
-
-  @media (max-width: 630px) {
-    .about-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-text > p {
-        text-align: center;
-    }
-    .img-portrait {
-        margin-top: 40px
-    }
+  .about-portrait {
+    width: 300px;
   }
+}
+
+@media (max-width: 750px) {
+  .img-portrait {
+    width: 250px;
+  }
+  .about-portrait {
+    width: 250px;
+  }
+  .about-container {
+    margin: 50px 0 50px 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text > p {
+    text-align: center;
+  }
+  .img-portrait {
+    margin-top: 40px;
+  }
+ 
+}

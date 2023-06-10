@@ -2,12 +2,12 @@ import { projects } from "../../../utils/projects/currentProjects";
 import { useNavigate } from "react-router-dom";
 
 export default function ProjectContent({ content, setCheckLocation }) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const navigateClick = () => {
-    setCheckLocation("hidden-nav")
-    navigate("/archives")
-  }
+    setCheckLocation("hidden-nav");
+    navigate("/archives");
+  };
   return (
     <div ref={content} className="content-container projects-content-container">
       {projects.map((project) => (
@@ -28,18 +28,28 @@ export default function ProjectContent({ content, setCheckLocation }) {
           <div className="project-col-2">
             <div className="buit-wrapper">
               <p className="project-desc">{project.description}</p>
-              {project.builtWith.map((tech, idx) => (
-                <div key={idx} className="built-with">
-                  <p>{tech}</p>
-                </div>
-              ))}
+              <div className="built-with-container">
+                {project.builtWith.map((tech, idx) => (
+                  <div key={idx} className="built-with">
+                    <p>{tech}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <a className="project-links" href={project.link}>live site</a>
-            <a className="project-links" href={project.link}>github</a>
+            <div className="project-links-container">
+              <a className="project-links" href={project.link}>
+                live site
+              </a>
+              <a className="project-links" href={project.link}>
+                github
+              </a>
+            </div>
           </div>
         </div>
       ))}
-      <p onClick={navigateClick} className="archive-link">Archives Link</p>
+      <p onClick={navigateClick} className="archive-link">
+        Archives Link
+      </p>
     </div>
   );
 }
