@@ -77,12 +77,6 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
         <li onClick={handleClick}>{toggleNav ? "c" : "case-studies"}</li>
         <li onClick={handleClick}>{toggleNav ? "c" : "contact"}</li>
       </ul>
-      {/* <ul ref={navUl} className={`list-wrapper unhide-nav ${checkLocation}`}>
-        <li onClick={handleClick}>a</li>
-        <li onClick={handleClick}>p</li>
-        <li onClick={handleClick}>c</li>
-        <li onClick={handleClick}>c</li>
-      </ul> */}
     </div>
   );
 }
