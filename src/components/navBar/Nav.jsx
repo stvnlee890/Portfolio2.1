@@ -18,21 +18,25 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
     const navList = [...navUl.current.children];
     navListAnimation(navList);
     nameAnimation(nameHeader.current);
-  }, []);
 
-  useEffect(() => {
+    if (window.innerWidth <= 651) {
+      window.localStorage.setItem("toggle", `true`);
+    } else {
+      window.localStorage.setItem("toggle", "false")
+    }
+    const getLS = window.localStorage.getItem("toggle");
+    if (getLS === "true") {
+      setToggleNav(true);
+    } else {
+      setToggleNav(false);
+    }
+    
     function handleResize() {
-      console.log(window.innerWidth);
       if (window.innerWidth <= 651) {
         setToggleNav(true);
       } else {
-        setToggleNav(false)
+        setToggleNav(false);
       }
-    }
-    if (location.pathname === "/archives") {
-      setCheckLocation("hidden-nav");
-    } else {
-      setCheckLocation("");
     }
 
     window.addEventListener("resize", handleResize);
@@ -40,6 +44,17 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
+  }, []);
+
+  useEffect(() => {
+
+    if (location.pathname === "/archives") {
+      setCheckLocation("hidden-nav");
+    } else {
+      setCheckLocation("");
+    }
+
+ 
   }, []);
 
   const handleClick = (e) => {
@@ -64,7 +79,6 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
     setCheckLocation("");
     navigate("/");
   };
- 
 
   return (
     <div className="nav-container">
