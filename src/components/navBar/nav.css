@@ -68,16 +68,5 @@
   .nav-container {
     grid-template-columns: .4fr .5fr;
   }
-  .hide-nav {
-    display: none;
-  }
-  .unhide-nav {
-    display: block;
-  }
-}
 
-@media (min-width: 651px) {
-  .unhide-nav {
-    display: none;
-  }
 }

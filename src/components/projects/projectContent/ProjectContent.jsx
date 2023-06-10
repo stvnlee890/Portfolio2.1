@@ -47,9 +47,11 @@ export default function ProjectContent({ content, setCheckLocation }) {
           </div>
         </div>
       ))}
-      <p onClick={navigateClick} className="archive-link">
-        Archives Link
-      </p>
+      <div className="archive-link-container">
+        <p onClick={navigateClick} className="archive-link">
+          Archives Link
+        </p>
+      </div>
     </div>
   );
 }

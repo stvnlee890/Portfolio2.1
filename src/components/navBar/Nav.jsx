@@ -1,5 +1,5 @@
 import "./nav.css";
-import { useRef, useLayoutEffect, useEffect } from "react";
+import { useRef, useLayoutEffect, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {
   navListAnimation,
@@ -8,10 +8,11 @@ import {
 
 export default function Nav({ appRef, checkLocation, setCheckLocation }) {
   const navigate = useNavigate();
-  const location = useLocation()
+  const location = useLocation();
   const navUl = useRef(null);
   const nameHeader = useRef(null);
 
+  const [toggleNav, setToggleNav] = useState(false);
 
   useLayoutEffect(() => {
     const navList = [...navUl.current.children];
@@ -19,20 +20,32 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
     nameAnimation(nameHeader.current);
   }, []);
 
-
   useEffect(() => {
-    if(location.pathname === '/archives') {
-      setCheckLocation('hidden-nav');
+    function handleResize() {
+      console.log(window.innerWidth);
+      if (window.innerWidth <= 651) {
+        setToggleNav(true);
+      } else {
+        setToggleNav(false)
+      }
     }
-    else {
-      setCheckLocation('')
+    if (location.pathname === "/archives") {
+      setCheckLocation("hidden-nav");
+    } else {
+      setCheckLocation("");
     }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const handleClick = (e) => {
     let eleName;
     const target = e.target.innerText;
-    const shortRef = appRef.current.children[1]
+    const shortRef = appRef.current.children[1];
     if (target === "projects") {
       eleName = shortRef.children[1];
     } else if (target === "about") {
@@ -40,7 +53,7 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
     } else if (target === "case-studies") {
       eleName = shortRef.children[2];
     } else {
-      eleName = shortRef.children[3]
+      eleName = shortRef.children[3];
     }
     eleName.scrollIntoView({
       behavior: "smooth",
@@ -48,9 +61,10 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
   };
 
   const homeClick = () => {
-    setCheckLocation("")
-    navigate('/')
-  }
+    setCheckLocation("");
+    navigate("/");
+  };
+ 
 
   return (
     <div className="nav-container">
@@ -58,17 +72,17 @@ export default function Nav({ appRef, checkLocation, setCheckLocation }) {
         SEUNG KI LEE<span>&#169;</span>
       </p>
       <ul ref={navUl} className={`list-wrapper hide-nav ${checkLocation}`}>
-        <li onClick={handleClick}>about</li>
-        <li onClick={handleClick}>projects</li>
-        <li onClick={handleClick}>case-studies</li>
-        <li onClick={handleClick}>contact</li>
+        <li onClick={handleClick}>{toggleNav ? "a" : "about"}</li>
+        <li onClick={handleClick}>{toggleNav ? "p" : "projects"}</li>
+        <li onClick={handleClick}>{toggleNav ? "c" : "case-studies"}</li>
+        <li onClick={handleClick}>{toggleNav ? "c" : "contact"}</li>
       </ul>
-      <ul ref={navUl} className={`list-wrapper unhide-nav ${checkLocation}`}>
+      {/* <ul ref={navUl} className={`list-wrapper unhide-nav ${checkLocation}`}>
         <li onClick={handleClick}>a</li>
         <li onClick={handleClick}>p</li>
         <li onClick={handleClick}>c</li>
         <li onClick={handleClick}>c</li>
-      </ul>
+      </ul> */}
     </div>
   );
 }
