@@ -10,7 +10,7 @@
 
 .case-content-wrapper {
   display: grid;
-  grid-template-columns: 0.1fr 0.2fr 0.5fr 0.2fr;
+  grid-template-columns: 0.2fr 0.4fr 0.6fr 0.2fr;
   margin-top: 20px;
 }
 
@@ -39,6 +39,7 @@
   text-align: center;
   color: var(--font-blue);
   cursor: pointer;
+  text-align: end;
 }
 .content-link:hover {
   text-decoration: underline;
