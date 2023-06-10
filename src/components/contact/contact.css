@@ -9,7 +9,7 @@
 }
 
 .contact-text {
-  font-size: 1.05rem;
+  font-size: var(--font-size-small);
   text-align: center;
 }
 
@@ -21,4 +21,26 @@
   padding: 10px;
   font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .contact-text {
+    font-size: var(--font-size-xsmall);
+  }
+
+  .email {
+    font-size: var(--font-size-xsmall);
+    border: 2px solid var(--font-blue)
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-content {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .contact-content {
+    width: 300px;
+  }
 }
