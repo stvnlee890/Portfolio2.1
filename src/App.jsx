@@ -17,6 +17,7 @@ function App() {
   // Scrolls to top on page refresh
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+    window.localStorage.clear()
   };
 
   /*
