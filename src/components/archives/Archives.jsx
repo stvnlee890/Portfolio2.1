@@ -51,7 +51,7 @@ export default function Archives() {
               <div>
                 <a href={archive.link} rel="noopener noreferrer" target="_blank">
                   <img
-                    src="/src/assets/github-icon.png"
+                    src="/assets/github-icon.png"
                     alt="Github logo"
                     width="24"
                     height="24"
@@ -61,7 +61,7 @@ export default function Archives() {
               <div>
                 <a href={archive.liveSite} rel="noopener noreferrer" target="_blank">
                   <img
-                    src="/src/assets/external-link.png"
+                    src="/assets/external-link.png"
                     alt="external link logo"
                     width="24"
                     height="24"
