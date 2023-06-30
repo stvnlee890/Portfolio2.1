@@ -32,7 +32,7 @@ export default function About() {
       <div className="about-portrait">
         <img
           className="img-portrait"
-          src="portrait.webp"
+          src="/portrait.webp"
           alt="portrait"
         />
       </div>
