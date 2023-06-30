@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { useRef, useLayoutEffect } from "react";
 import { aboutAnimation } from "../../utils/animations/animations";
 
+
 export default function About() {
   const aboutSection = useRef(null);
 
@@ -31,7 +32,7 @@ export default function About() {
       <div className="about-portrait">
         <img
           className="img-portrait"
-          src="/src/assets/portrait.webp"
+          src="portrait.webp"
           alt="portrait"
         />
       </div>
