@@ -23,46 +23,6 @@ export const archived = [
         link: "https://github.com/",
         liveSite: "https://wikipedia.com/",
       },
-    {
-        id: "004",
-        year: "2022",
-        name: "Music Discog",
-        builtWith: ["React", "Node"],
-        link: "https://github.com/",
-        liveSite: "https://wikipedia.com/",
-      },
-    {
-        id: "005",
-        year: "2022",
-        name: "Music Discog",
-        builtWith: ["React", "Node"],
-        link: "https://github.com/",
-        liveSite: "https://wikipedia.com/",
-      },
-    {
-        id: "006",
-        year: "2022",
-        name: "Music Discog",
-        builtWith: ["React", "Node"],
-        link: "https://github.com/",
-        liveSite: "https://wikipedia.com/",
-      },
-    {
-        id: "007",
-        year: "2022",
-        name: "Music Discog",
-        builtWith: ["React", "Node"],
-        link: "https://github.com/",
-        liveSite: "https://wikipedia.com/",
-      },
-    {
-        id: "008",
-        year: "2022",
-        name: "Music Discog",
-        builtWith: ["React", "Node"],
-        link: "https://github.com/",
-        liveSite: "https://wikipedia.com/",
-      },
-    
+  
   ];
   

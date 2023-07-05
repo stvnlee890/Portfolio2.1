@@ -19,7 +19,7 @@ export function aboutAnimation(element, element1) {
   gsap.to(element1, {
     y: 0,
     ease: Power4.easeInOut,
-    duration: 1,
+    duration: 2,
   });
 }
 

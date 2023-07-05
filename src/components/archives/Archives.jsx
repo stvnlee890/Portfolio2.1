@@ -15,15 +15,14 @@ export default function Archives() {
     })
 
     return () => {
-      console.log("Revert animations")
-      console.log("Animation reverted " + ctx.isReverted)
       ctx.revert()
-      console.log("Animation reverted " + ctx.isReverted)
     }
   }, [])
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   return (
     <div className="section-headers archives">
       <h1>Archives</h1>
