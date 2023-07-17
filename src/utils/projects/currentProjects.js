@@ -14,5 +14,4 @@ export const projects = [
     link: "https://github.com/",
     liveSite: "https://wikipedia.com/",
   },
-  
 ];
