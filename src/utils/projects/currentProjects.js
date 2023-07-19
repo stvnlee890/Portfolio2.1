@@ -2,7 +2,7 @@ export const projects = [
   {
     id: "001",
     image: "/assets/projectAssets/thinkTrivia/think-trivia.png",
-    year: "2022",
+    year: "2023",
     name: "Think Trivia",
     builtWith: ["React", "TypeScript", "GSAP", "The Trivia API"],
     description:
