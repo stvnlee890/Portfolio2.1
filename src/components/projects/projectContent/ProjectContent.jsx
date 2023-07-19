@@ -1,13 +1,13 @@
 import { projects } from "../../../utils/projects/currentProjects";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export default function ProjectContent({ content, setCheckLocation }) {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const navigateClick = () => {
-    setCheckLocation("hidden-nav");
-    navigate("/archives");
-  };
+  // const navigateClick = () => {
+  //   setCheckLocation("hidden-nav");
+  //   navigate("/archives");
+  // };
   return (
     <div ref={content} className="content-container projects-content-container">
       {projects.map((project) => (
@@ -47,11 +47,11 @@ export default function ProjectContent({ content, setCheckLocation }) {
           </div>
         </div>
       ))}
-      <div className="archive-link-container">
+      {/* <div className="archive-link-container">
         <p onClick={navigateClick} className="archive-link">
           Archives Link
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
