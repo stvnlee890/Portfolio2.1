@@ -37,7 +37,7 @@ export default function ProjectContent({ content, setCheckLocation }) {
               </div>
             </div>
             <div className="project-links-container">
-              <a className="project-links" href={project.link}>
+              <a className="project-links" href={project.liveSite}>
                 live site
               </a>
               <a className="project-links" href={project.link}>
