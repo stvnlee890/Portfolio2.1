@@ -67,9 +67,10 @@
 }
 
 .images {
-  width: 500px;
+  width: 300px;
   height: auto;
 }
+
 
 .line {
   width: 0%;
@@ -157,7 +158,7 @@
 @media (max-width: 600px) {
   .project-content {
     display: grid;
-    grid-template-rows: 0.2fr 380px;
+    grid-template-rows: 0.2fr 1fr;
     grid-template-columns: 1fr;
     align-items: center;
     margin-bottom: 200px;
