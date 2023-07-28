@@ -16,11 +16,11 @@ export function aboutAnimation(element, element1) {
     ease: Power4.easeInOut,
   
   });
-  gsap.to(element1, {
-    y: 0,
-    ease: Power4.easeInOut,
-    duration: 2,
-  });
+  // gsap.to(element1, {
+  //   y: 0,
+  //   ease: Power4.easeInOut,
+  //   duration: 2,
+  // });
 }
 
 export function nameAnimation(element) {

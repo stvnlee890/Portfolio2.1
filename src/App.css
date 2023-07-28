@@ -13,7 +13,10 @@
   --font-size-medium: 1.2rem;
   --font-size-small: 1.1rem;
   --font-size-xsmall: .9rem;
-  --font-size-case-small: .8rem
+  --font-size-case-small: .8rem;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
 }
 * {

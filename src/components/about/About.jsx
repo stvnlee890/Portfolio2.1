@@ -8,9 +8,10 @@ export default function About() {
   const aboutSection = useRef(null);
 
   useLayoutEffect(() => {
-    const img = aboutSection.current.children[1].children[0];
+    // const img = aboutSection.current.children[1].children[0];
+    // console.log(img)
     let ctx = gsap.context(() => {
-      aboutAnimation(aboutSection.current, img);
+      aboutAnimation(aboutSection.current);
     });
 
     return () => {
@@ -29,12 +30,9 @@ export default function About() {
           of frontend development.
         </p>
       </div>
-      <div className="about-portrait">
-        <img
-          className="img-portrait"
-          src="/assets/portrait.webp"
-          alt="portrait"
-        />
+      <div className="about-links">
+        <a href="https://github.com/stvnlee890" rel="noreferrer noopener" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/seung-ki-lee/" rel="noreferrer noopener" target="_blank">LinkedIn</a>
       </div>
     </section>
   );
